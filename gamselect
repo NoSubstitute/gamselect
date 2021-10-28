@@ -1,0 +1,17 @@
+#!/bin/bash
+# Set the path to the GAM you want to use
+GAM=$HOME/gamadv-xtd3/gam
+
+if [ "$1" = "default" ]; then
+$GAM select $1 save
+GAMSECTION=$($GAM config verify | grep -oP '(?<=Section: )[^ ]*')
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]:\[\033[01;32m\]$GAMSECTION\[\033[00m\]\$ '
+
+elif [ "$1" != "" ]; then
+$GAM select $1 save
+GAMSECTION=$($GAM config verify | grep -oP '(?<=Section: )[^ ]*')
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]:\[\033[01;31m\]$GAMSECTION\[\033[00m\]\$ '
+
+else
+echo "You have to choose a section"
+fi
