@@ -8,6 +8,10 @@ Put gamselect.sh in your path, and edit it to point to where your GAMADV-XTD4 in
 
 gam will now switch to the mentioned section and stay there until you run gamselect to another section.
 
+## Configuration
+Copy the content of the .basrc to the end of your own, and gam will add your current section to the prompt.<br>
+Adjust the path and PS variables as necessary to suit your system.
+
 ## Aliases
 Now, the way I use it is to create aliases to the sections I use the most.
 
