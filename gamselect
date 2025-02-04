@@ -1,6 +1,6 @@
 #!/bin/bash
 # Set the path to the GAM you want to use
-GAM=$HOME/gamadv-xtd3/gam
+GAM=$HOME/bin/gam7/gam
 
 if [ "$1" = "default" ]; then
 $GAM select $1 save
