@@ -1,5 +1,5 @@
 # gamselect
-Easily choose a GAMADV-XTD3 and indicate in the terminal prompt which section that is active
+Easily choose a GAM section and indicate in the terminal prompt which section that is active
 
 ## USAGE:
 Put gamselect.sh in your path, and edit it to point to where your GAMADV-XTD4 install is residing. Then run it giving your section as input.
